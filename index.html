@@ -413,7 +413,7 @@
             <label>
               <span class="contact-form-label">Name</span>
               <div class="input-wrapper">
-                <input type="text" name="name" />
+                <input type="text" name="name" required />
                 <svg width="18px" height="18px" class="contact-form-icon">
                   <use href="./images/icons.svg#icon-person"></use>
                 </svg>
@@ -422,7 +422,7 @@
             <label>
               <span class="contact-form-label">Phone</span>
               <div class="input-wrapper">
-                <input type="tel" name="phone-number" />
+                <input type="tel" name="phone-number" required />
                 <svg width="18px" height="24px" class="contact-form-icon-phone">
                   <use href="./images/icons.svg#icon-phone"></use>
                 </svg>
@@ -431,7 +431,7 @@
             <label>
               <span class="contact-form-label">Email</span>
               <div class="input-wrapper">
-                <input type="email" name="email" />
+                <input type="email" name="email" required />
                 <svg width="18px" height="24px" class="contact-form-icon-email">
                   <use href="./images/icons.svg#icon-email"></use>
                 </svg>
@@ -447,9 +447,19 @@
             </label>
           </div>
           <label class="contact-form-privacy">
-            <input type="checkbox" name="privacy-policy" value="accept" />
-            I accept the terms and conditions of the
-            <a href="#0">Privacy Policy</a>
+            <input
+              type="checkbox"
+              name="privacy-policy"
+              value="accept"
+              required
+            />
+            <svg width="16px" height="16px" class="contact-form-checkbox-icon">
+              <use href="./images/icons.svg#icon-checkbox-checked"></use>
+            </svg>
+            <span class="contact-form-privacy-prompt">
+              I accept the terms and conditions of the
+              <a href="#0">Privacy Policy</a></span
+            >
           </label>
           <button type="submit">
             <span>Send</span>

@@ -597,7 +597,32 @@ figure img {
   line-height: 133%;
   letter-spacing: 0.04em;
 }
-
+input[name="privacy-policy"] {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+}
+input[name="privacy-policy"]:checked {
+  --color8: var(--ocean);
+}
+.contact-form-checkbox-icon {
+  --color8: var(--dairy);
+  box-sizing: border-box;
+  border-radius: 2px;
+  border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.4));
+  translate: -20px;
+}
+input[name="privacy-policy"]:checked + .contact-form-checkbox-icon {
+  --color8: var(--ocean);
+  border: none;
+}
+.contact-form-privacy-prompt {
+  translate: -15px -3px;
+  display: inline-block;
+}
 .contact-form button {
   margin-inline: auto;
   display: block;
