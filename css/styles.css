@@ -556,13 +556,15 @@ figure img {
   resize: none;
   padding-bottom: 5px;
 }
-.contact-form input:focus,
+.input-wrapper input:focus,
 .contact-form textarea:focus {
   border-color: var(--iris);
   outline: none;
 }
-.contact-form input:focus svg {
+.input-wrapper:focus-within svg {
   --color1: var(--iris);
+  --color3: var(--iris);
+  fill: var(--iris);
 }
 .input-wrapper {
   position: relative;
