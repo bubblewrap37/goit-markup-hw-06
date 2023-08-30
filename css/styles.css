@@ -540,6 +540,9 @@ figure img {
   font-size: 12px;
   line-height: 116.667%;
   letter-spacing: 0.04em;
+  border-radius: 4px;
+  border: 1px solid var(--navyblue-modal, rgba(46, 47, 66, 0.4));
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-form-inputs input {
   padding-left: 38px;
@@ -553,16 +556,23 @@ figure img {
   resize: none;
   padding-bottom: 5px;
 }
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--iris);
+  outline: none;
+}
+.contact-form input:focus svg {
+  --color1: var(--iris);
+}
 .input-wrapper {
   position: relative;
 }
-.input-wrapper svg {
-  background-color: var(--dairy);
-}
+
 .contact-form-icon {
   position: absolute;
   top: 11px;
   left: 16px;
+  --color1: var(--navyblue);
 }
 .contact-form-icon-phone,
 .contact-form-icon-email {
